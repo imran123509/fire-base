@@ -5,6 +5,7 @@ import {getAuth, createUserWithEmailAndPassword, SignInMethod} from "firebase/au
 import {app} from "./firebase";
 import './App.css';
 import SignUpPage from './pages/SignUp';
+import Signin from './pages/signin';
 
 const auth=getAuth(app)
 //const db=getDatabase(app)
@@ -28,11 +29,12 @@ function App() {
   };
   return (
     <div className="App">
-        {/* <h1>fhfjfhkef</h1> */}
+       
         {/* <button onClick={signUpUser}>Create User</button> */}
 
 
     <SignUpPage />
+    <Signin/>
      </div>
   );
 }

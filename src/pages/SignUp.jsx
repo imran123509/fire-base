@@ -15,6 +15,7 @@ const signUpPage = () =>{
     }
     return (
          <div className="signup-page">
+             <h1>Sign In</h1>
                <label>email</label>
                <input onChange={(e)=> setEmail(e.target.value)} value={email} type="email" required placeholder="Enter your Email Here" />
                <label>Password</label>
